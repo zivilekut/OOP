@@ -40,7 +40,23 @@ prasukti ciklą per masyvą ir atspausdinti knygas (naudojam getterius)*/
         for (Book book : books) {
             System.out.println(book);
         }
+        System.out.println();
 
+/*Sukurti klasę Plant
+Visi laukai turi būti private, turėti getterius ir setterius.
+konstruktoriai - 2. tuščias ir su visais fieldais.
 
+Klasės laukai:
+Pavadinimas
+lotyniskas pavadinimas
+boolean vienmetis
+kokiam zemyne auga
+suaugusio augalo aukstis metrais.
+ar valgomas?
+
+Maine susikuriam masyvą saugoti augalams. sukuriame 4 augalus (2x2 pagal konstruktorius)
+
+prasukti ciklą
+pvz foreach ir atspausdinti augalus (naudojant toString() )*/
     }
 }
