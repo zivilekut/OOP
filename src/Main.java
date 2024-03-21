@@ -42,6 +42,11 @@ prasukti ciklą per masyvą ir atspausdinti knygas (naudojam getterius)*/
         }
         System.out.println();
 
+        for (int i = 0; i < books.size(); i++) {
+            System.out.println(books.get(i));
+        }
+        System.out.println();
+
 /*Sukurti klasę Plant
 Visi laukai turi būti private, turėti getterius ir setterius.
 konstruktoriai - 2. tuščias ir su visais fieldais.
@@ -58,5 +63,38 @@ Maine susikuriam masyvą saugoti augalams. sukuriame 4 augalus (2x2 pagal konstr
 
 prasukti ciklą
 pvz foreach ir atspausdinti augalus (naudojant toString() )*/
+
+        Plant plant1 = new Plant();
+        Plant plant2 = new Plant();
+
+        plant1.setName("Common sunflower");
+        plant1.setNameLatin("Helianthus annuus");
+        plant1.setOneYear(true);
+        plant1.setContinent("Europe, North and South America");
+        plant1.setHeight(3);
+        plant1.setEatable(false);
+
+        plant2.setName("Strawberry");
+        plant2.setNameLatin("Fragaria × ananassa");
+        plant2.setOneYear(false);
+        plant2.setContinent("Europe, North and South America, Asia");
+        plant2.setHeight(0.2);
+        plant2.setEatable(true);
+
+        Plant plant3 = new Plant("Baobab", "Adansonia", false,
+                "Africa, Australia", 30, false);
+        Plant plant4 = new Plant("Oak", "Quercus ", false,
+                "Asia, Europe, and North Africa.", 44, false);
+
+        ArrayList<Plant> plants = new ArrayList<>();
+        plants.add(plant1);
+        plants.add(plant2);
+        plants.add(plant3);
+        plants.add(plant4);
+
+        for (Plant plant : plants) {
+            System.out.println(plant);
+        }
+
     }
 }
