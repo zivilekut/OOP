@@ -26,6 +26,7 @@ prasukti ciklą per masyvą ir atspausdinti knygas (naudojam getterius)*/
         Book book4 = new Book("Harry Potter and the Goblet of Fire", 636, 2000);
         Book book5 = new Book("Harry Potter and the Order of the Phoenix", 766, 2003);
         Book book6 = new Book("Harry Potter and the Half-Blood Prince", 607, 2005);
+        Book book7 = new Book("Harry Potter and the Deathly Hallows", 607, 2007);
 
         ArrayList<Book> books = new ArrayList<>();
         books.add(book1);
@@ -34,6 +35,7 @@ prasukti ciklą per masyvą ir atspausdinti knygas (naudojam getterius)*/
         books.add(book4);
         books.add(book5);
         books.add(book6);
+        books.add(book7);
 
         for (Book book : books) {
             System.out.println(book);
