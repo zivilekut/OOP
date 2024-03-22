@@ -1,10 +1,10 @@
 public class Plant {
     private String name;
     private String nameLatin;
-    private boolean oneYear;
+    private boolean isAnnual;
     private String continent;
     private double height;
-    private boolean eatable;
+    private boolean isEdible;
 
     public void setName(String name) {
         this.name = name;
@@ -22,12 +22,12 @@ public class Plant {
         return this.nameLatin;
     }
 
-    public void setOneYear(boolean oneYear) {
-        this.oneYear = oneYear;
+    public void setIsAnnual(boolean isAnnual) {
+        this.isAnnual = isAnnual;
     }
 
-    public boolean getOneYear() {
-        return this.oneYear;
+    public boolean getIsAnnual() {
+        return this.isAnnual;
     }
 
     public void setContinent(String continent) {
@@ -47,32 +47,32 @@ public class Plant {
     }
 
     public void setEatable(boolean eatable) {
-        this.eatable = eatable;
+        this.isEdible = eatable;
     }
 
     public boolean getEatable() {
-        return this.eatable;
+        return this.isEdible;
     }
 
     public Plant() {
 
     }
 
-    public Plant(String name, String nameLatin, boolean oneYear, String continent, double height, boolean eatable) {
+    public Plant(String name, String nameLatin, boolean isAnnual, String continent, double height, boolean eatable) {
         this.name = name;
         this.nameLatin = nameLatin;
-        this.oneYear = oneYear;
+        this.isAnnual = isAnnual;
         this.continent = continent;
         this.height = height;
-        this.eatable = eatable;
+        this.isEdible = eatable;
     }
 
     public String toString() {
         return this.name + " " +
                 this.nameLatin + " " +
-                this.oneYear + " " +
+                (this.isAnnual ? "Annual" : "Multiyear") + " " +
                 this.continent + " " +
                 this.height + " " +
-                this.eatable;
+                (this.isEdible ? "Eatable" : "Not eatable");
     }
 }

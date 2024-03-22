@@ -74,14 +74,14 @@ pvz foreach ir atspausdinti augalus (naudojant toString() )*/
 
         plant1.setName("Common sunflower");
         plant1.setNameLatin("Helianthus annuus");
-        plant1.setOneYear(true);
+        plant1.setIsAnnual(true);
         plant1.setContinent("Europe, North and South America");
         plant1.setHeight(3);
         plant1.setEatable(false);
 
         plant2.setName("Strawberry");
         plant2.setNameLatin("Fragaria × ananassa");
-        plant2.setOneYear(false);
+        plant2.setIsAnnual(false);
         plant2.setContinent("Europe, North and South America, Asia");
         plant2.setHeight(0.2);
         plant2.setEatable(true);
