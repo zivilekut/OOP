@@ -47,6 +47,11 @@ prasukti ciklą per masyvą ir atspausdinti knygas (naudojam getterius)*/
         }
         System.out.println();
 
+        for (int i = 0; i < books.size(); i++) {
+            System.out.println(books.get(i).getTitle() + " " + books.get(i).getPages() + " " + books.get(i).getReleaseYea());
+        }
+        System.out.println();
+
 /*Sukurti klasę Plant
 Visi laukai turi būti private, turėti getterius ir setterius.
 konstruktoriai - 2. tuščias ir su visais fieldais.
