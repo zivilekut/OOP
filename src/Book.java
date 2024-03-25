@@ -36,7 +36,6 @@ public class Book {
         this.pages = pages;
         this.releaseYear = releaseYear;
     }
-
     @Override
     public String toString(){
         return this.title + " " +

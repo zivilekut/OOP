@@ -100,6 +100,5 @@ pvz foreach ir atspausdinti augalus (naudojant toString() )*/
         for (Plant plant : plants) {
             System.out.println(plant);
         }
-
     }
 }

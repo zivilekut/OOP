@@ -66,7 +66,7 @@ public class Plant {
         this.height = height;
         this.isEdible = eatable;
     }
-
+    @Override
     public String toString() {
         return this.name + " " +
                 this.nameLatin + " " +
